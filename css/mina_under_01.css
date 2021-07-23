@@ -1,0 +1,484 @@
+/************************/
+/******  SEC1   *********/
+/************************/
+.sec1_wrap {
+    width: 100%;
+    height: 100vh;
+    background: #6cf;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.BOUNCE {
+    position: relative;
+    top: 150px;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+.BOUNCE > span {
+    width: 1000px;
+    color: #c94d36;
+    text-shadow: 0px -10px 30px rgba(0, 0, 0, 0.21);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 250px;
+    text-align: center;
+}
+
+.wrap_W {
+    position: relative;
+}
+
+
+.sky_light {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: linear-gradient(to bottom left, rgba(255, 255, 255, 0.29) 0%, transparent 70%);
+
+    z-index: 1;
+}
+
+.sky_light2 {
+    width: inherit;
+    height: inherit;
+    background-image: url(../img/sea_light.png);
+    background-repeat: repeat-x;
+}
+
+
+/************************/
+/******  SEC2   *********/
+/************************/
+.sec2_wrap {
+    width: 100%;
+    height: 1000px;
+    background: linear-gradient(to bottom, #6cf 0%, #666699 2%, #0C152D 40%);
+    position: relative;
+    transition: background 2s;
+}
+
+.sea_light {
+    width: 100%;
+    height: 890px;
+    background: url(../img/sea_light.png);
+    background-size: contain;
+    position: absolute;
+    top: -2px;
+    z-index: 1;
+}
+
+.rhino_wave1,
+.rhino_wave2 {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    background: url(../img/rhino_wave.png) repeat-x 50%;
+    z-index: 2;
+
+    animation-name: wave;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.rhino_wave2 {
+    animation-delay: 3s;
+}
+
+@keyframes wave {
+    50% {
+        background-position: 0%;
+    }
+}
+
+.rhino_outer_wrap {
+    position: relative;
+    top: -1000px;
+    overflow: hidden;
+}
+
+.rhino_wrap {
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 1800px;
+    height: 2000px;
+}
+
+.rhino_scale {
+    width: 100%;
+    height: 100%;
+}
+
+.rhino {
+    width: 100%;
+    height: 1600px;
+    position: absolute;
+    top: 200px;
+    background: url(../img/rhino1.png) no-repeat;
+    z-index: 1;
+}
+
+.rhino_brow {
+    width: 670px;
+    height: 140px;
+    position: absolute;
+    background: url(../img/rhino_brow.png);
+    background-size: 100%;
+    top: 1180px;
+    left: 610px;
+    z-index: 1;
+
+    animation-name: rhino_brow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rhino_brow {
+    20% {
+        top: 1190px;
+    }
+
+    50% {
+        top: 1160px;
+    }
+
+    60% {
+        top: 1170px;
+    }
+
+    70% {
+        top: 1160px;
+    }
+
+    80% {
+        top: 1170px;
+    }
+}
+
+.rhino_nose {
+    width: 670px;
+    height: 140px;
+    z-index: 1;
+    position: absolute;
+    background: url(../img/rhino_nose.png) no-repeat;
+    background-size: 100%;
+    top: 1418px;
+    left: 613px;
+
+
+    animation-name: rhino_nose;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rhino_nose {
+    50% {
+        transform: scale(1.05)
+    }
+}
+
+
+
+/** 오른팔 **/
+.rhino_rt {
+    width: 719.36px;
+    height: 719.36px;
+    background: url(../img/rhino_rt.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 1019px;
+    left: 138px;
+    transform: rotate(40deg);
+    z-index: 1;
+
+    animation-name: rhino_rt;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rhino_rt {
+
+
+    70% {
+        transform: rotate(-10deg);
+    }
+}
+
+.rhino_rb {
+    width: 644.74px;
+    height: 644.74px;
+    background: url(../img/rhino_rb.png) no-repeat;
+    position: absolute;
+    top: 240px;
+    left: 38px;
+
+    animation-name: rhino_rb;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rhino_rb {
+
+    60% {
+        transform: rotate(-50deg);
+    }
+}
+
+
+
+/** 왼팔 **/
+
+.rhino_lt {
+    width: 719.36px;
+    height: 719.36px;
+    background: url(../img/rhino_rt.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 1019px;
+    left: 1046px;
+    transform: rotate(-40deg);
+    z-index: 1;
+
+    animation-name: rhino_lt;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2.5s;
+}
+
+@keyframes rhino_lt {
+
+
+    70% {
+        transform: rotate(10deg);
+    }
+}
+
+.rhino_lb {
+    width: 644.74px;
+    height: 644.74px;
+    background: url(../img/rhino_rb.png) no-repeat;
+    position: absolute;
+    top: 240px;
+    left: 38px;
+
+    animation-name: rhino_lb;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2.5s;
+
+}
+
+@keyframes rhino_lb {
+
+    60% {
+        transform: rotate(50deg);
+    }
+}
+
+
+.rhino_back_l {
+    width: 200px;
+    height: 400px;
+    background: url(../img/rhino_b.png) no-repeat;
+    position: absolute;
+    top: 1440px;
+    left: 1050px;
+    transform: rotate(0deg);
+
+    animation-name: rhino_bl;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rhino_bl {
+    20% {
+        transform: rotate(-40deg);
+        top: 1400px;
+        left: 1150px;
+    }
+}
+
+
+.rhino_back_r {
+    width: 200px;
+    height: 400px;
+    background: url(../img/rhino_b.png) no-repeat;
+    position: absolute;
+    top: 1440px;
+    left: 650px;
+    transform: rotate(0deg);
+
+    animation-name: rhino_br;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+@keyframes rhino_br {
+    20% {
+        transform: rotate(40deg);
+        top: 1400px;
+        left: 550px;
+    }
+}
+
+.rhino_buble1,
+.rhino_buble2,
+.rhino_buble3,
+.rhino_buble4,
+.rhino_buble6,
+.rhino_buble7,
+.rhino_buble8,
+.rhino_buble9 {
+    width: 80px;
+    height: 120px;
+    background: url(../img/rhino_buble.png) no-repeat;
+    position: absolute;
+    opacity: 0;
+    z-index: 4;
+
+    animation-name: buble1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.rhino_buble1 {
+    top: 1450px;
+    left: 730px;
+    background-size: 80%
+}
+
+.rhino_buble2 {
+    top: 1436px;
+    left: 750px;
+    background-size: 60%;
+}
+
+.rhino_buble3 {
+    top: 1410px;
+    left: 710px;
+    background-size: 70%;
+}
+
+.rhino_buble4 {
+    top: 1520px;
+    left: 790px;
+    background-size: 30%;
+}
+
+.rhino_buble6 {
+    top: 1450px;
+    left: 1090px;
+    background-size: 80%;
+}
+
+.rhino_buble7 {
+    top: 1410px;
+    left: 1130px;
+    background-size: 60%;
+}
+
+.rhino_buble8 {
+    top: 1436px;
+    left: 1090px;
+    background-size: 70%;
+}
+
+.rhino_buble9 {
+    top: 1420px;
+    left: 1090px;
+    background-size: 30%;
+}
+
+@keyframes buble1 {
+    20% {
+        opacity: 1;
+        transform: rotate(-100deg);
+        top: 1560px;
+        width: 50px;
+
+    }
+
+    60% {
+        opacity: 0.5;
+        top: 1500px;
+    }
+}
+
+/************************/
+/******  SEC3   *********/
+/************************/
+
+.sec3_wrap,
+.footer_wrap {
+    width: 100%;
+    height: auto;
+    background: #0C152D;
+    transition: all 3s;
+
+}
+.sec3_wrap{
+    padding-bottom: 120px;
+}
+.footer_wrap{
+    background: #1D2B44;
+
+}
+
+.mina,
+.footer {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    transition: all 2s;
+}
+
+
+/*responsive web*/
+
+@media only screen and (max-width:1280px) {
+
+    .BOUNCE > span {
+        font-size: 17vw;
+    }
+
+    .sec3_wrap,
+    .footer_wrap {
+        position: relative;
+        top: -200px;
+    }
+
+    .mina,
+    .footer {
+        width: 80%;
+    }
+
+}
+
+
+@media only screen and (max-width:700px) {
+    .BOUNCE > span {
+        font-size: 25vw;
+    }
+/*
+    .sec2_wrap{
+    height: 600px;
+    background: linear-gradient(to bottom, #6cf 0%, #666699 2%, #0C152D 40%);
+    }
+*/
+    .sec3_wrap,
+    .footer_wrap {
+        position: relative;
+
+    }
+
+    .mina,
+    .footer {
+        width: 100%;
+    }
+
+}
